@@ -1,11 +1,24 @@
-# Site settings
-title: "Jeff Gabhart"
-email: lazydesert@gmail.com
-username: jeffgabhart
-description: "Perhaps you'll find this useful."
-baseurl: ""
-url: "http://jeffgabhart.github.io"
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jeff Gabhart
+tagline:          'Maybe this is useful to you'
+description:      ''
+url:              http://jeffgabhart.github.io
+
+author:
+  name:           'Jeff Gabhart'
+  url:            https://twitter.com/jeffgabhart
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           
