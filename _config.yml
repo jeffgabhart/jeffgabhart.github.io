@@ -1,6 +1,7 @@
 # Site settings
 title: jeffgabhart.github.io
 email: lazydesert@gmail.com
+username: jeffgabhart
 description: "Perhaps you'll find this useful."
 baseurl: ""
 url: "http://jeffgabhart.github.io"
