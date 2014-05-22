@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hello World
+category: code
+tags: csharp, servicestack
 ---
 {% highlight csharp linenos %}
 public class HelloWorldService : Service
