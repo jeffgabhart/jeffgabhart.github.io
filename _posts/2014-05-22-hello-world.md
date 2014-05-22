@@ -10,7 +10,7 @@ public class HelloWorldService : Service
         return "Hello, {0}.".Fmt(request.Name);
     }
     
-    [Route("/helloworld/{name}", "GET")]
+    [Route("/hello-world/{name}", "GET")]
     public class HelloWorld
     {
         public string Name { get; set; }
