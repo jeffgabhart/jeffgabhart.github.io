@@ -12,9 +12,11 @@ The browser cached the original GET requests, and now any GETs to that same reso
 {% highlight csharp linenos %}
 public class NoCacheAttribute : RequestFilterAttribute
 {
-    public override void Execute(IHttpRequest req, IHttpResponse res, object responseDto)
+    public override void Execute(IHttpRequest req, IHttpResponse res, 
+      object responseDto)
     {
-        res.AddHeader(HttpHeaders.CacheControl, "no-store,must-revalidate,no-cache,max-age=0");
+        res.AddHeader(HttpHeaders.CacheControl, 
+          "no-store,must-revalidate,no-cache,max-age=0");
     }
 }
 {% endhighlight %}
@@ -24,3 +26,5 @@ Simply add `[NoCache]` to your service or method to keep the browser from cachin
 In the future, I want to take a look at using ETag in conjuction with the Cache-Control header. You can vote for ETag support in ServiceStack at [UserVoice][user-voice] .
 
   [user-voice]: https://servicestack.uservoice.com/forums/176786-feature-requests/suggestions/4470997-add-etag-if-none-match-support-to-enable-client 'ServiceStack Feature Request - ETag'
+
+        res.AddHeader(HttpHeaders.CacheControl, "no-store,must-rev
