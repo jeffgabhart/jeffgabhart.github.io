@@ -7,13 +7,13 @@ tags: csharp, servicestack
 {% highlight csharp %}
 public class HelloWorldService : Service
 {
-    public object Get(HelloWorld request)
+    public object Get(Hello request)
     {
         return "Hello, {0}.".Fmt(request.Name);
     }
     
-    [Route("/hello-world/{name}", "GET")]
-    public class HelloWorld
+    [Route("/hello/{name}", "GET")]
+    public class Hello
     {
         public string Name { get; set; }
     }
