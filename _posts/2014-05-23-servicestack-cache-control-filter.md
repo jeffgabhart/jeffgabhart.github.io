@@ -12,8 +12,8 @@ The browser cached the original GET requests, and now any GETs to that same reso
 {% highlight csharp linenos %}
 public class NoCacheAttribute : RequestFilterAttribute
 {
-    public override void Execute(IHttpRequest req, IHttpResponse res, 
-      object responseDto)
+    public override void Execute(IHttpRequest req, 
+      IHttpResponse res, object responseDto)
     {
         res.AddHeader(HttpHeaders.CacheControl, 
           "no-store,must-revalidate,no-cache,max-age=0");
