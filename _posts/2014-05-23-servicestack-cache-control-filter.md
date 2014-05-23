@@ -9,7 +9,7 @@ While testing with a Microsoft Surface, I noticed that API data was always stale
 
 The browser cached the original GET requests, and now any GETs to that same resource returned the data from cache. As a first attempt to address the issue, I created a request filter to set the Cache-Control header. 
 
-{% highlight csharp linenos %}
+{% highlight csharp %}
 public class NoCacheAttribute : RequestFilterAttribute
 {
     public override void Execute(IHttpRequest req, 
@@ -26,5 +26,3 @@ Simply add `[NoCache]` to your service or method to keep the browser from cachin
 In the future, I want to take a look at using ETag in conjuction with the Cache-Control header. You can vote for ETag support in ServiceStack at [UserVoice][user-voice] .
 
   [user-voice]: https://servicestack.uservoice.com/forums/176786-feature-requests/suggestions/4470997-add-etag-if-none-match-support-to-enable-client 'ServiceStack Feature Request - ETag'
-
-        res.AddHeader(HttpHeaders.CacheControl, "no-store,must-rev

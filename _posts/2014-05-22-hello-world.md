@@ -4,7 +4,7 @@ title: Hello World
 category: code
 tags: csharp, servicestack
 ---
-{% highlight csharp linenos %}
+{% highlight csharp %}
 public class HelloWorldService : Service
 {
     public object Get(HelloWorld request)
