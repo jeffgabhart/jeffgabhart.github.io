@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Sending and Receiving SMS Through Tropo
+title: Send and Receive SMS Through Tropo
 category: code
 tags: ruby, tropo, sms
 ---
 
-I wanted a [Tropo][tropo] script that could send out text messages via the REST API as well as forward text messages that were received through the Tropo phone number. This scaffold shows how I identified and handled the two cases. 
+I wanted a [Tropo][tropo] script that could send out text messages via the REST API as well as forward text messages that were received through the Tropo phone number. This snippet shows how I identified and handled the two cases. 
 
 {% highlight ruby %}
 if $action == "create"
